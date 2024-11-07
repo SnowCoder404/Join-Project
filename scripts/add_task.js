@@ -2,6 +2,7 @@ function loadTask() {
     loadSidebar();
     showWhichSiteIsAktiv();
     mediumPrio();
+    
 }
 
 function showWhichSiteIsAktiv() {

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="shortcut icon" href="./assets/icon/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/flexbox.css">
+    <link rel="stylesheet" href="./styles/pages/login.css">
+    <link rel="stylesheet" href="./styles/media_query.css">
+    <script src="./scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="./assets/icon/icon.svg" class="join-icon" alt="Join">
+        </div>
+        <div class="d_flex_c sign-in hidden">
+            <span>Not a Join user ?</span>
+            <a href="./pages/sign_up.html">
+              <button class="sign-up">Sign up</button>
+            </a>
+        </div>
+    </header>
+    <main class="d_flex_c">
+        <div>
+            <div class="formDiv">
+                <form class="text-center login-form w-100">
+                    <div class="d_flex_c" style="padding: 24px;">
+                        <div style="width: 150px;">
+                            <h1>Log in</h1>
+                            <div class="separator"></div>
+                        </div>
+                    </div>
+                    <div id="email" class="d_flex">
+                        <input type="email" placeholder="E-Mail" class="w-100 input-font" required>
+                        <img src="" alt="">
+                    </div>
+                    <div id="password" class="d_flex">
+                        <input type="password" placeholder="Password" class="w-100 input-font" required>
+                        <img src="" alt="">
+                    </div>
+                    <div id="checkboxContainer" style="text-align: initial;">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </div>
+                    <div class="buttonDiv">
+                        <button onclick="loginUser()" class="button bg-blue color-white sign-up">Log in</button>
+                        <button onclick="guestLogin()" class="button">Guest Log in</button>
+                    </div>
+                </form>
+                <div class="hiddenMin d_flex notUser" style="padding-top: 24px;">
+                    <span>Not a Join user ?</span> 
+                    <a href="./pages/sign_up.html">
+                        <button class="bg-blue color-white sign-up">Sign up</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="d_flex_c sign-in">
+            <a><span>Privacy Policy</span></a>
+            <a><span>Legal notice</span></a>
+        </div>
+    </footer>
+</body>
+</html>

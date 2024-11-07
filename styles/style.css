@@ -64,10 +64,8 @@ img {
     }
 
     span {
-      color: #fff;
       font-size: 15px;
     }
-  }
 
 .navigation {
   display: flex;

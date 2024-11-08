@@ -1,3 +1,10 @@
+/**
+ * 
+ * The function check how important is the task. 
+ * 
+ * @param {number} num - The important of the task. 1 is important and 3 has a low priority. 
+ */
+
 function checkThePrioOfTask(num) {
     if (num == 1) {
         urgentPrio();

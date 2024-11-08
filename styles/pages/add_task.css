@@ -1,13 +1,12 @@
 .flex {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  margin-bottom: 12px;
-  font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 12px;
+    font-size: 24px;
 }
 
 .separator {
-
     height: 330px;
     width: 3px;
     margin: 60px;

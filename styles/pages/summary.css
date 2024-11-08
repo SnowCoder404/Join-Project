@@ -8,7 +8,6 @@
 
 .page_title_div {
     flex-direction: row;
-
     height: 73px;
     width: 625px;
     gap: 30px;
@@ -53,9 +52,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
     background-color: white;
-
     height: 168px;
     width: 264px;
     border-radius: 30px;
@@ -79,9 +76,7 @@
     height: 168px;
     border-radius: 30px;
     gap: 61px;
-
     background-color: white;
-
     display: flex;
     flex-direction: row;
     align-items: center;

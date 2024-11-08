@@ -9,3 +9,15 @@ function renderTemplates(pageName) {
 
   sidebarElement.innerHTML = sidebar;
 }
+
+
+/**
+ * The function add a class to the element.
+ * 
+ * @param {string} element - The element that is added to the class. 
+ * @param {string} aktiveClass - The class that is added to the element.
+ */
+
+function addClassToElement(element, aktiveClass) {
+  document.getElementById(element).classList.add(aktiveClass);
+}

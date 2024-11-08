@@ -12,17 +12,6 @@ function showWhichSiteIsAktiv() {
     addClassToElement("contacts", "no-active");
 }
 
-/**
- * The function add a class to the element.
- * 
- * @param {string} element - The element that is added to the class. 
- * @param {string} aktiveClass - The class that is added to the element.
- */
-
-function addClassToElement(element, aktiveClass) {
-    document.getElementById(element).classList.add(aktiveClass);
-}
-
 function checkThePrioOfTask(num) {
     if (num == 1) {
         urgentPrio();
@@ -94,4 +83,8 @@ function createNewTask() {
     }
     console.log(taskObj);
     clear();
+}
+
+function showCheckboxMenu() {
+    document.getElementById("checkboxMenu").classList.remove("d_none");
 }

@@ -19,7 +19,7 @@
             <aside id="sidebar" class="sidebar"></aside>
             <main class="d_flex_c w-100 main">
                 <header id="header" class="header"></header>
-                <form class="d_flex_column">
+                <div class="d_flex_column">
                     <div class="d_flex_c">
                         <div>
                             <h1 style="margin-bottom: 12px;">Add Task</h1>
@@ -30,11 +30,13 @@
                                 </div>
                                 <div class="flex">
                                     <span>Description</span>
-                                    <input id="description" type="text" placeholder="Enter a Description" class="input-task">
+                                    <textarea id="description" rows="5" cols="50" placeholder="Enter a Description"></textarea>
                                 </div>
                                 <div class="flex">
                                     <span>Assigned to</span>
-                                    <input type="text">
+                                    <select id="userlist" style="height: 28px;">
+                                        <option>Select contacts to assign</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -47,14 +49,33 @@
                             <div class="flex">
                                 <span>Prio</span>
                                 <div class="d_flex">
-                                    <button id="urgent"  class="prio-button" onclick="checkThePrioOfTask(1);">Urgent</button>
-                                    <button id="medium" class="prio-button" onclick="checkThePrioOfTask(2);">Medium</button>
-                                    <button id="low" class="prio-button" onclick="checkThePrioOfTask(3);">Low</button>
+                                    <button id="urgent"  class="d_flex_c prio-button" onclick="checkThePrioOfTask(1);">Urgent
+                                        <div class="d_flex_column">
+                                            <img id="urgent0" src="../assets/img/urgent.svg" alt="urgent" class="prio-button-image">
+                                            <img id="urgent1" src="../assets/img/urgent.svg" alt="urgent" class="prio-button-image">
+                                        </div>
+                                    </button>
+
+                                    <button id="medium" class="d_flex_c prio-button" onclick="checkThePrioOfTask(2);">Medium
+                                        <div class="d_flex_column">
+                                            <img id="medium0" src="../assets/img/medium-white.svg" alt="medium" class="prio-button-image">
+                                            <img id="medium1" src="../assets/img/medium-white.svg" alt="medium" class="prio-button-image">
+                                        </div>
+                                    </button>
+
+                                    <button id="low" class="d_flex_c prio-button" onclick="checkThePrioOfTask(3);">Low
+                                        <div class="d_flex_column">
+                                            <img id="low0" src="../assets/img/low.svg" alt="low" class="prio-button-image">
+                                            <img id="low1" src="../assets/img/low.svg" alt="low" class="prio-button-image">
+                                        </div>
+                                    </button>
                                 </div>
                             </div>
                             <div class="flex">
-                                <span>Category</span>
-                                <input type="text">
+                                <span>Category<span class="color-red">*</span></span>
+                                <select id="categoryList" style="height: 28px;">
+                                    <option>Select task category</option>
+                                </select>
                             </div>
                             <div class="flex">
                                 <span>Subtasks</span>
@@ -62,14 +83,18 @@
                             </div>
                         </div>
                     </div>
-                </form>
-                <div class="d_flex buttonTaskDiv">
-                    <span>
-                        <span class="color-red">*</span>This field is required
-                    </span>
-                    <div>
-                        <button onclick="clear();" class="bg-blue clear-and-create-button">Clear</button>
-                        <button onclick="createNewTask();" class="bg-blue clear-and-create-button">Create Task</button>
+                </div>
+                <div class="d_flex_c">
+                    <div class="d_flex buttonTaskDiv">
+                        <span>
+                            <span class="color-red">*</span>This field is required
+                        </span>
+                        <div class="d_flex g_12">
+                            <button onclick="clear();" class="clear-and-create-button" style="color: black;">Clear X</button>
+                            <button onclick="createNewTask();" class="bg-blue clear-and-create-button">Create Task
+                                <img src="../assets/img/check.svg" alt="check">
+                            </button>
+                        </div>
                     </div>
                 </div>
             </main>

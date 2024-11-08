@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Join</title>
-    <link rel="shortcut icon" href="./assets/icon/icon.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/pages/board.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/flexbox.css" />
-    <link rel="stylesheet" href="../styles/base.css" />
-    <script src="../scripts/template.js" defer></script>
-    <script src="../scripts/script.js" defer></script>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Join</title>
+      <link rel="shortcut icon" href="./assets/icon/icon.svg" type="image/x-icon"/>
+      <link rel="stylesheet" href="../styles/pages/board.css"/>
+      <link rel="stylesheet" href="../styles/style.css"/>
+      <link rel="stylesheet" href="../styles/flexbox.css"/>
+      <link rel="stylesheet" href="../styles/base.css"/>
+      <script src="../scripts/template.js"></script>
+      <script src="../scripts/script.js"></script>
+      <script src="../scripts/board.js"></script>
   </head>
-  <body onload="renderTemplates('board');">
-    <aside class="sidebar"></aside>
-
+<body onload="loadBoard();">  
+    <aside id="sidebar" class="sidebar"></aside>
     <main class="app-main">
-      <header></header>
-
-      <div class="container">
-        <!-- Here comes your content -->
-        Here comes your content
-      </div>
+        <header id="header"></header>
+        <div class="container"></div>
     </main>
-  </body>
+</body>
 </html>

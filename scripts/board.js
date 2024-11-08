@@ -1,3 +1,9 @@
+/**
+ * 
+ *  The function load all templates if the page load. 
+ * 
+ */
+
 function loadBoard() {
     loadSidebar();
     addClassToElement("summary", "no-active");

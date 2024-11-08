@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/style.css"/>
     <script src="../scripts/template.js"></script>
+    <script src="../scripts/prio.js"></script>
     <script src="../scripts/script.js"></script>
     <script src="../scripts/add_task.js"></script>
   </head>
@@ -26,7 +27,7 @@
                             <div>
                                 <div class="flex">
                                     <span>Title<span class="color-red">*</span></span>
-                                    <input id="title" type="text" placeholder="Enter a title" class="input-task input-field" required>
+                                    <input id="title" type="text" placeholder="Enter a title" class="input-task input-field must-input" required>
                                     <span id="titleFailNote" class="d_none fail-note">Fail not all fields write</span>
                                 </div>
                                 <div class="flex">
@@ -45,7 +46,7 @@
                         <div style="margin: 46px 10px;">
                             <div class="flex">
                                 <span>Due date<span class="color-red">*</span></span>
-                                <input id="date" type="date" class="input-task" required>
+                                <input id="date" type="date" class="input-task must-input" required>
                                 <span id="dateFailNote" class="d_none fail-note">Fail not all fields write</span>
                             </div>
                             <div class="flex">
@@ -75,7 +76,7 @@
                             </div>
                             <div class="flex">
                                 <span>Category<span class="color-red">*</span></span>
-                                <select id="categoryList" class="h-34 input-field">
+                                <select id="category" class="h-34 input-field must-input">
                                     <option>Select task category</option>
                                 </select>
                                 <span id="categoryFailNote" class="d_none fail-note">Fail not all fields write</span>

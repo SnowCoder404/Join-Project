@@ -29,6 +29,9 @@ function sidebarShow() {
             </div>`;
 }
 
+function getUserListTemplate(value, option) {
+    return `<option value="${value}">${option}</option>`;
+}
 
 function getHeaderTemplate() {
     return `<h1 style="margin: 50px;">Kanban Project Management Tool</h1>

@@ -16,10 +16,28 @@ function showWhichSiteIsAktiv() {
 function checkThePrioOfTask(num) {
     if (num == 1) {
         urgentPrio();
+        document.getElementById("urgent0").src = "../assets/img/urgent-white.svg";
+        document.getElementById("urgent1").src = "../assets/img/urgent-white.svg";
+        document.getElementById("medium0").src = "../assets/img/medium.svg";
+        document.getElementById("medium1").src = "../assets/img/medium.svg";
+        document.getElementById("low0").src = "../assets/img/low.svg";
+        document.getElementById("low1").src = "../assets/img/low.svg";
     } else if (num == 2) {
         mediumPrio();
+        document.getElementById("urgent0").src = "../assets/img/urgent.svg";
+        document.getElementById("urgent1").src = "../assets/img/urgent.svg";
+        document.getElementById("medium0").src = "../assets/img/medium-white.svg";
+        document.getElementById("medium1").src = "../assets/img/medium-white.svg";
+        document.getElementById("low0").src = "../assets/img/low.svg";
+        document.getElementById("low1").src = "../assets/img/low.svg";
     } else if (num == 3) {
         lowPrio();
+        document.getElementById("urgent0").src = "../assets/img/urgent.svg";
+        document.getElementById("urgent1").src = "../assets/img/urgent.svg";
+        document.getElementById("medium0").src = "../assets/img/medium.svg";
+        document.getElementById("medium1").src = "../assets/img/medium.svg";
+        document.getElementById("low0").src = "../assets/img/low-white.svg";
+        document.getElementById("low1").src = "../assets/img/low-white.svg";
     }
 }
 
@@ -86,6 +104,11 @@ function createNewTask() {
     clear();
 }
 
-function showCheckboxMenu() {
-    document.getElementById("checkboxMenu").classList.remove("d_none");
+/*
+function showUserList() {
+    for (let index = 0; index < userlist.length; index++) {
+        let userName = userlist[index];
+        document.getElementById("userlist").innerHTML = getUserListTemplate(index, userName);
+    }
 }
+*/

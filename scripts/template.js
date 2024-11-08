@@ -39,6 +39,6 @@ function getHeaderTemplate() {
             <div id="headerMenu" class="d_none header-menu">
                 <a href="./legal_notice.html">Legal Notice</a>
                 <a href="./privacy_policy.html">Privacy Policy</a>
-                <a href="#">Logout</a>
+                <a href="../index.html">Logout</a>
             </div>`;
 }

@@ -1,6 +1,7 @@
 function loadTask() {
     loadSidebar();
     showWhichSiteIsAktiv();
+    loadHeader();
     mediumPrio();
     
 }

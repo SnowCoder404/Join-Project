@@ -28,3 +28,14 @@ function sidebarShow() {
                 </div> 
             </div>`;
 }
+
+
+function getHeaderTemplate() {
+    return `<h1 style="margin: 50px;">Kanban Project Management Tool</h1>
+            <button onclick="toggleHeaderMenu();" class="header-menu-button">X</button>
+            <div id="headerMenu" class="d_none header-menu">
+                <a href="./legal_notice.html">Legal Notice</a>
+                <a href="./privacy_policy.html">Privacy Policy</a>
+                <a href="#">Logout</a>
+            </div>`;
+}

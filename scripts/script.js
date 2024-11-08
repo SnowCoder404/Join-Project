@@ -3,13 +3,9 @@ function loadSidebar() {
     document.getElementById("sidebar").innerHTML = sidebarShow();
 }
 
-function renderTemplates(pageName) {
-  const sidebar = getSidebarHTML(pageName);
-  const sidebarElement = document.querySelector('.sidebar');
-
-  sidebarElement.innerHTML = sidebar;
+function loadHeader() {
+    document.getElementById("header").innerHTML = getHeaderTemplate();
 }
-
 
 /**
  * The function add a class to the element.
@@ -20,4 +16,8 @@ function renderTemplates(pageName) {
 
 function addClassToElement(element, aktiveClass) {
   document.getElementById(element).classList.add(aktiveClass);
+}
+
+function toggleHeaderMenu() {
+    document.getElementById("headerMenu").classList.toggle("d_none");
 }

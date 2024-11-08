@@ -4,4 +4,5 @@ function loadBoard() {
     addClassToElement("task", "no-active");
     addClassToElement("board", "active");
     addClassToElement("contacts", "no-active");
+    loadHeader();
 }
